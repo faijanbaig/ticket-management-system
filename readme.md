@@ -38,27 +38,34 @@ This project aims to assess and demonstrate skills in:
    git clone https://github.com/faijanbaig/ticket-management-system.git
 
 2. Navigate into the project directory:
+   ```bash
    cd ticket-management-system
 
 3. Install dependencies:
+   ```bash
    npm install
 
 4. Navigate into the src directory:
+   ```bash
    cd src
 
 5. Set up environment variables:
+   ```env
    CORS_ORIGIN=*
    PORT=8000
    MONGODB_URI= Your MongoDB connection string with database name
 
 6. Start the server:
+   ```bash
    node index.js
 
 # Usage
 ## API Endpoints
 1. POST /api/v0/ticket: Create a new ticket.
     Example :POST  http://localhost:8000/api/v0/ticket 
-      Request Body:{
+      Request Body:
+      ```json
+      {
       "title":"test ticket",
       "description":"this is a test description.",
       "status":"confirm"
@@ -71,7 +78,9 @@ This project aims to assess and demonstrate skills in:
   
 4. PATCH /api/v0/ticket/: Update a specific ticket by ID.
      Example :PATCH  http://localhost:8000/api/v0/ticket/:ticketId
-      Request Body:{
+      Request Body:
+      ```json
+      {
       "title":"test ticket",
       "description":"this is a test description.",
       "status":"confirm"
