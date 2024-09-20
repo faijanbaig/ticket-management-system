@@ -99,4 +99,4 @@ This project aims to assess and demonstrate skills in:
 5. DELETE /api/v0/ticket/: Delete a specific ticket by ID.
      Example :DELETE  http://localhost:8000/api/v0/ticket/:ticketId
 
-Note : Here :ticketId in an example is the objectId of the created ticket, use that id .
+Note : Here :ticketId in an example is the objectId of the ticket, use that id for testing.
