@@ -53,15 +53,17 @@ This project aims to assess and demonstrate skills in:
    ```bash
    cd src
    ```
-
-5. Set up environment variables:
+   
+5. Create .env i.e environment variable file inside src directory.
+  
+6. Set up environment variables:
    ```env
    CORS_ORIGIN=*
    PORT=8000
    MONGODB_URI= Your MongoDB connection string with database name
     ```
 
-6. Start the server:
+7. Start the server:
    ```bash
    node index.js
    ```
