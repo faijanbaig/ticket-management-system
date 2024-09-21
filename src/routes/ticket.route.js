@@ -3,10 +3,10 @@ import { createTicket, deleteTicket, getAllTicket, getTicketById, updateTicket }
 
 const router = Router();
 
-router.route("/ticket").post(createTicket);
-router.route("/ticket").get(getAllTicket);
-router.route("/ticket/:ticketId").get(getTicketById);
-router.route("/ticket/:ticketId").patch(updateTicket);
-router.route("/ticket/:ticketId").delete(deleteTicket);
+router.route("/tickets").post(createTicket);
+router.route("/tickets").get(getAllTicket);
+router.route("/tickets/:ticketId").get(getTicketById);
+router.route("/tickets/:ticketId").patch(updateTicket);
+router.route("/tickets/:ticketId").delete(deleteTicket);
 
 export default router;
